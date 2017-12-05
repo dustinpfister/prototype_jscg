@@ -1,0 +1,17 @@
+{
+  "name": "prototype_jscg",
+  "version": "1.0.0",
+  "description": "javascript check gate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "check",
+    "content",
+    "system"
+  ],
+  "author": "Dustin Pfister",
+  "license": "GPL-3.0"
+}

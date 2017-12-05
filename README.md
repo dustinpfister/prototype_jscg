@@ -10,9 +10,15 @@ However some of the content remains on the server, behind a non public path, and
 
 * 1) JSCH serves some of the site no matter what
 * 2) A request for the rest of the content is then sent from the client only if javaScript is enabled on the client.
-* 4) The rest of the content is then injected via DOM manipulation.
+* 3) The rest of the content is then injected via DOM manipulation.
 
 ## The more advanced idea is this
+
+* A source folder contains markdown files
+* The markdown files can be  generated into a collection of static html files in a public folder, and json files in a private folder.
+* a common api is used on each page for the purpose of unlocking content
+* a simple theme can be defined
+* The types of checks to be preformed can be defined in the markdown files.
 
 Additional information might be gathered, and sent back to the back end for the purpose of making additional checks before unlocking content such as weather or not the visitor is allowing google analytics, and has a valid user id for that. Weather or not the visitor is logged in to something, ect.
 
@@ -23,7 +29,7 @@ Additional information might be gathered, and sent back to the back end for the 
 This is an example of markdown that will be used in JSCG this content will be part of the static content of the site that will always show up like normal.
 
 {% asset {
-   content : 'This however is protected content that will not how up if javaScript is not disabled'
+   content : 'This however is protected content that will not show up if javaScript is not enabled'
 } %}
 
 {% asset {
